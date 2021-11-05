@@ -229,3 +229,21 @@ li a {
     font-size: 1.5rem;
     margin-left: 100px;
 }
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    width: 30%;
+    margin: 25% 35%;
+    padding-top: 30px;
+}
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+    #nav {
+        display: none;
+    }
+    #mobile-nav {
+        display: block;
+    }
+}
