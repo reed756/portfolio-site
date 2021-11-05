@@ -9,6 +9,7 @@
 :root {
     --light-text: #F3F3F9;
     --dark-blue: #243E7A;
+    --blue-blue: #6371AE;
     --mid-blue: #7E89BA;
     --bg-blue: #758EC4;
 }
@@ -52,4 +53,136 @@ li a {
     color: var(--dark-blue);
     font-size: 30px;
     font-weight: bold;
+}
+
+/* Hero Section */
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container {
+    position: relative;
+    background-image: url(/images/hero-image.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+    animation: scale 15s;
+}
+@keyframes scale {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 2;
+}
+.firstword {
+    color: var(--dark-blue);
+}
+.resume-cta {
+    border: 2px solid var(--dark-blue);
+    width: 175px;
+    padding: 30px;
+    margin-top: 20px;
+}
+.resume-text {
+    color: #fff;
+}
+.resume-cta:hover {
+    background-color: rgba(100, 100, 100, 0.4);
+}
+/* Projects section */
+.project-container {
+    height: auto;
+    width: 100%;
+}
+.project-header {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+.cv-project {
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 50px;
+    background-image: url(/images/cv-project.png);
+    background-size: cover;
+    background-position: center;
+}
+.store-project {
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 50px;
+    background-image: url(/images/cv-project.png);
+    background-size: cover;
+    background-position: right;
+}
+.todo-project {
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 50px;
+    background-image: url(/images/cv-project.png);
+    background-size: cover;
+    background-position: left;
+}
+.text-container {
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    overflow: hidden;
+}
+.text-container:hover {
+    height: 200px;
 }
