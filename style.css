@@ -184,5 +184,48 @@ li a {
     overflow: hidden;
 }
 .text-container:hover {
-    height: 200px;
+    height: 250px;
+}
+.name {
+    margin-top: 10px;
+    color: var(--dark-blue);
+    font-size: 2rem;
+}
+.content {
+    padding: 25px 0;
+    color: var(--mid-blue);
+}
+.button {
+    border: 5px solid var(--light-text);
+    width: 160px;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin-bottom: 50px;
+}
+/* About Section */
+.about-container {
+    margin: 10%;
+    width: 80%;
+    height: auto;
+    background-color: var(--light-text);
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+}
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+.about-image {
+    height: 450px;
+    width: 400px;
+    background-image: url(/images/picture.png);
+    background-size: cover;
+    background-position: center;
+}
+.about-text {
+    height: auto;
+    width: 40%;
+    font-size: 1.5rem;
+    margin-left: 100px;
 }
