@@ -26,6 +26,7 @@
 
 html {
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    scroll-behavior: smooth !important;
 }
 
 a {
@@ -54,7 +55,6 @@ li a {
     font-size: 30px;
     font-weight: bold;
 }
-
 /* Hero Section */
 
 .container {
@@ -68,7 +68,7 @@ li a {
     position: relative;
     background-image: url(/images/hero-image.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: right;
     height: 100%;
     width: 100%;
     margin-top: 0vh;
@@ -94,7 +94,7 @@ li a {
 .hero-text {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     position: absolute;
     top: 35%;
@@ -157,11 +157,11 @@ li a {
     box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     margin: 50px;
-    background-image: url(/images/cv-project.png);
+    background-image: url(/images/store.png);
     background-size: cover;
-    background-position: right;
+    background-position: center;
 }
-.todo-project {
+.weather-project {
     width: 400px;
     height: 400px;
     background: #fff;
@@ -169,13 +169,13 @@ li a {
     box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     margin: 50px;
-    background-image: url(/images/cv-project.png);
+    background-image: url(/images/weather-app.png);
     background-size: cover;
-    background-position: left;
+    background-position: center;
 }
 .text-container {
     position: absolute;
-    height: 75px;
+    height: 70px;
     width: 100%;
     z-index: 2;
     left: 0;
@@ -240,10 +240,44 @@ li a {
 }
 /* MOBILE VIEW */
 @media (max-width: 768px) {
-    #nav {
+    #navbar {
         display: none;
     }
     #mobile-nav {
         display: block;
+    }
+    .mobile-navbar {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 5;
+    }
+    .cv-project {
+        width: 250px;
+    }
+    .store-project {
+        width: 250px;
+    }
+    .weather-project {
+        width: 250px;
+    }
+    .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8f8f8;
+        box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+    }
+    .about-image {
+        height: 300px;
+        width: 225px;
+        background-image: url(/images/picture.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .about-text {
+        margin-left: 20px;
+        width: 100%;
+        font-size: 0.75rem;
     }
 }
