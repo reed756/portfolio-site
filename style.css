@@ -1,285 +1,285 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300, 400, 700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300, 400, 700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --light-text: #F3F3F9;
-    --dark-blue: #243E7A;
-    --blue-blue: #6371AE;
-    --mid-blue: #7E89BA;
-    --bg-blue: #758EC4;
+  --light-text: #f3f3f9;
+  --dark-blue: #243e7a;
+  --blue-blue: #6371ae;
+  --mid-blue: #7e89ba;
+  --bg-blue: #758ec4;
 }
 
 #mobile-nav {
-    display: none;
+  display: none;
 }
 
 .navbar {
-    position: absolute;
-    z-index: 2;
-    width: 100%;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
 }
 
 html {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    scroll-behavior: smooth !important;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  scroll-behavior: smooth !important;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10%;
-    list-style: none;
-    height: 10vh;
-    background-color: var(--bg-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  list-style: none;
+  height: 10vh;
+  background-color: var(--bg-blue);
 }
 
 li a {
-    display: block;
-    color: var(--light-text);
-    text-decoration: none;
-    font-size: 1.5rem;
+  display: block;
+  color: var(--light-text);
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 #name {
-    color: var(--dark-blue);
-    font-size: 30px;
-    font-weight: bold;
+  color: var(--dark-blue);
+  font-size: 30px;
+  font-weight: bold;
 }
 /* Hero Section */
 
 .container {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 .image-container {
-    position: relative;
-    background-image: url(/images/hero-image.jpeg);
-    background-size: cover;
-    background-position: right;
-    height: 100%;
-    width: 100%;
-    margin-top: 0vh;
-    animation: scale 15s;
+  position: relative;
+  background-image: url(/images/hero-image.jpeg);
+  background-size: cover;
+  background-position: right;
+  height: 100%;
+  width: 100%;
+  margin-top: 0vh;
+  animation: scale 15s;
 }
 @keyframes scale {
-    0% {
-        transform: scale(1.5);
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 .hero-text {
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-    position: absolute;
-    top: 35%;
-    left: 10%;
-    font-size: 25px;
-    color: var(--light-text);
-    text-transform: uppercase;
-    z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  font-size: 25px;
+  color: var(--light-text);
+  text-transform: uppercase;
+  z-index: 2;
 }
 .firstword {
-    color: var(--dark-blue);
+  color: var(--dark-blue);
 }
 .resume-cta {
-    border: 2px solid var(--dark-blue);
-    width: 175px;
-    padding: 30px;
-    margin-top: 20px;
+  border: 2px solid var(--dark-blue);
+  width: 175px;
+  padding: 30px;
+  margin-top: 20px;
 }
 .resume-text {
-    color: var(--light-text);
+  color: var(--light-text);
 }
 .resume-cta:hover {
-    background-color: rgba(100, 100, 100, 0.4);
+  background-color: rgba(100, 100, 100, 0.4);
 }
 /* Projects section */
 .project-container {
-    height: auto;
-    width: 100%;
+  height: auto;
+  width: 100%;
 }
 .project-header {
-    font-size: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--dark-blue);
-    margin: 20px;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-blue);
+  margin: 20px;
 }
 .projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
 }
 .cv-project {
-    width: 400px;
-    height: 400px;
-    background: var(--light-text);
-    position: relative;
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin: 50px;
-    background-image: url(/images/cv-project.png);
-    background-size: cover;
-    background-position: center;
+  width: 400px;
+  height: 400px;
+  background: var(--light-text);
+  position: relative;
+  box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 50px;
+  background-image: url(/images/cv-project.png);
+  background-size: cover;
+  background-position: center;
 }
 .store-project {
-    width: 400px;
-    height: 400px;
-    background: var(--light-text);
-    position: relative;
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin: 50px;
-    background-image: url(/images/store.png);
-    background-size: cover;
-    background-position: center;
+  width: 400px;
+  height: 400px;
+  background: var(--light-text);
+  position: relative;
+  box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 50px;
+  background-image: url(/images/store.png);
+  background-position: left top;
+  background-size: cover;
 }
 .weather-project {
-    width: 400px;
-    height: 400px;
-    background: var(--light-text);
-    position: relative;
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin: 50px;
-    background-image: url(/images/weather-app.png);
-    background-size: cover;
-    background-position: center;
+  width: 400px;
+  height: 400px;
+  background: var(--light-text);
+  position: relative;
+  box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 50px;
+  background-image: url(/images/weather-app.png);
+  background-size: cover;
+  background-position: center;
 }
 .text-container {
-    position: absolute;
-    height: 70px;
-    width: 100%;
-    z-index: 2;
-    left: 0;
-    bottom: 0;
-    background-color: var(--light-text);
-    overflow: hidden;
-    padding: 2%;
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  background-color: var(--light-text);
+  overflow: hidden;
+  padding: 2%;
 }
 .text-container:hover {
-    height: 260px;
+  height: 260px;
 }
 .name {
-    margin-top: 10px;
-    color: var(--dark-blue);
-    font-size: 2rem;
+  margin-top: 10px;
+  color: var(--dark-blue);
+  font-size: 2rem;
 }
 .content {
-    padding: 25px 0;
-    color: var(--mid-blue);
+  padding: 25px 0;
+  color: var(--mid-blue);
 }
 .button {
-    border: 5px solid var(--light-text);
-    width: 160px;
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    margin-bottom: 50px;
+  border: 5px solid var(--light-text);
+  width: 160px;
+  box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  margin-bottom: 50px;
 }
 /* About Section */
 .about-container {
-    margin: 10%;
-    width: 80%;
-    height: auto;
-    background-color: var(--light-text);
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+  margin: 10%;
+  width: 80%;
+  height: auto;
+  background-color: var(--light-text);
+  box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
 }
 .about-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
 }
 .about-image {
-    height: 450px;
-    width: 400px;
-    background-image: url(/images/picture.png);
-    background-size: cover;
-    background-position: center;
+  height: 450px;
+  width: 400px;
+  background-image: url(/images/picture.png);
+  background-size: cover;
+  background-position: center;
 }
 .about-text {
-    height: auto;
-    width: 40%;
-    font-size: 1.5rem;
-    margin-left: 100px;
+  height: auto;
+  width: 40%;
+  font-size: 1.5rem;
+  margin-left: 100px;
 }
 .social-icons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 2rem;
-    width: 30%;
-    margin: 25% 35%;
-    padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  width: 30%;
+  margin: 25% 35%;
+  padding-top: 30px;
 }
 /* MOBILE VIEW */
 @media (max-width: 768px) {
-    #navbar {
-        display: none;
-    }
-    #mobile-nav {
-        display: block;
-    }
-    .mobile-navbar {
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-        z-index: 5;
-    }
-    .cv-project {
-        width: 250px;
-    }
-    .store-project {
-        width: 250px;
-    }
-    .weather-project {
-        width: 250px;
-    }
-    .about-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--light-text);
-        box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-    }
-    .about-image {
-        height: 300px;
-        width: 225px;
-        background-image: url(/images/picture.png);
-        background-size: cover;
-        background-position: center;
-    }
-    .about-text {
-        margin-left: 20px;
-        width: 100%;
-        font-size: 0.75rem;
-    }
+  #navbar {
+    display: none;
+  }
+  #mobile-nav {
+    display: block;
+  }
+  .mobile-navbar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+  }
+  .cv-project {
+    width: 250px;
+  }
+  .store-project {
+    width: 250px;
+  }
+  .weather-project {
+    width: 250px;
+  }
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-text);
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+  }
+  .about-image {
+    height: 300px;
+    width: 225px;
+    background-image: url(/images/picture.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .about-text {
+    margin-left: 20px;
+    width: 100%;
+    font-size: 0.75rem;
+  }
 }
